@@ -15,7 +15,7 @@ class Person:                   # can be called as 'class' or 'template'
 
     # 1 - method tanpa return (kek void)
     def siapa(self):
-        print(f"nama: {self.name}")
+        print(f"nama: {self.firstName}")
     
     # 2 - method dengan argumen
     def nambah(self, angkaNambah):
@@ -29,7 +29,7 @@ class Person:                   # can be called as 'class' or 'template'
         print(f"{self.firstName} mencubit {orang.firstName}")
         orang.kena_cubit(self, self.powerofCubit)
     
-    def kena_cubit(self, orang):
+    def kena_cubit(self, orang, powercubit):
         print(f"{self.firstName} dicubit {orang.firstName}")
         darah_berkurang = (self.personDefense / orang.powerofCubit)
         darah_sekarang = self.barHealth - darah_berkurang
